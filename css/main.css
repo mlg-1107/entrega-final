@@ -1,0 +1,279 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Propiedades del body */
+
+body{
+    background-color: rgb(157, 245, 205);
+}
+
+/* Propiedades del header */
+
+header{
+    text-align: center;
+    background-color: rgb(157, 245, 205);
+    position: sticky;
+    top: 0;
+}
+
+header img{
+    padding-top: 30px;
+    width: 10%;
+    height: 10%;
+    margin-left: 30px;
+}
+
+/*  Propiedades del menú */
+
+.menu{
+    background-color: rgb(157, 245, 205);
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    background-color: white;
+    border-radius: 20px;
+}    
+    
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades del contenido principal */
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+/* Propiedades del index */
+
+.main-home img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    width: 600px;
+    height: 800px;
+}
+
+.main-home p{
+    padding: 60px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    column-count: 2;
+    text-align: justify;
+}
+
+/* Propiedades de Nosotros */
+
+.main-nosotros iframe{ 
+    padding: 40px;
+    margin-left: 40px;    
+}
+
+.main-nosotros p{
+    padding: 30px;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    width: 400px;
+    height: 150px;    
+}
+
+/* Propiedades del Productos */
+
+.main-productos{
+    text-align: center;
+}
+
+.image{
+    padding-top: 40px;
+    width: 30%;
+    height: 30%;
+}
+
+.boton{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades de Mayoristas */
+
+.img-derecha{
+    padding: 30px;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+.main-mayoristas p{
+    
+    padding: 30px;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    width: 400px;
+    height: 150px;      
+}
+
+/* Propiedades de Contacto */
+
+h3{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: left;
+    margin-left: 75px;
+    margin-bottom: 40px;
+}
+
+.main-contacto iframe{
+    padding: 40px;
+    margin-left: 40px;
+}
+
+.main-contacto p{
+    padding: 30px;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    width: 400px;
+    height: 150px;  
+}
+
+/* Propiedades del formulario */
+
+form{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    margin-left: 40px;
+}
+
+fieldset{
+    border: none;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+} 
+
+#name, #email{
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+#mensaje{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#texto{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.submit{
+    margin-left: 210px;
+    margin-top: 20px;
+    padding: 5px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.reset{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades del footer */
+
+footer{
+    text-align: center;
+    padding-bottom: 40px;
+    }
+
+footer p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: small;
+
+}
+
+.enlace-ig{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.item-fixed{
+    position: fixed;
+    bottom: 3px;
+    right: 10px;
+}
+
+.enlace-wpp{
+    width: 50px;
+    height: 50px;
+}
