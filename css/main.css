@@ -1,339 +1,345 @@
-/* RESET */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* estilos generales */
-
-body{
-    background-color: rgb(157, 245, 205);
+body {
+  margin: 30px;
+  background-color: rgb(161, 221, 194);
 }
 
-    /* propiedades del header */
-
-header{
-    background-color: rgb(157, 245, 205);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
+/* Propiedades del Header*/
+header {
+  width: 100%;
+  background-color: rgb(161, 221, 194);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-header img{
-    display: grid;
-    grid-template-rows: 1fr;
-    padding-top: 30px;
-    width: 10%;
-    height: 10%;
-    margin-left: 30px;
+/* Propiedades del Footer*/
+footer .derechos {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: small;
+  font-size: small;
+}
+footer .footer-completo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .contactanos {
+  font-weight: bold;
+  font-size: medium;
+  color: black;
+}
+footer .redes {
+  font-weight: bold;
+  font-size: medium;
+}
+footer .instagram {
+  width: 7vh;
+  height: 7vh;
+}
+footer .item-fixed {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  filter: drop-shadow(10px 10px 10px black);
+}
+footer .whatsapp {
+  width: 3rem;
+  height: 3rem;
 }
 
-    /* Propiedades del footer */
-
-footer{
-    text-align: center;
-    padding-bottom: 40px;
+/* Propiedades del Menú*/
+nav div img {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding-top: 30px;
+  width: 10%;
+  height: 10%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+nav div ul li {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+}
+nav div ul li .menu-buttom {
+  text-align: center;
+}
+nav div ul li .menu-buttom:hover {
+  filter: drop-shadow(2px 2px 2px rgb(128, 127, 127));
 }
 
-footer p{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: small;
-
+/* Proppiedades del Contenido Principal */
+h1 {
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
 }
 
-.instagram{
-    align-items: center;
-    width: 10vh;
-    height: 10vh;
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: larger;
 }
 
-.item-fixed{
-    position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
+/* Propiedades del Index*/
+.main-home div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-home .img-index {
+  margin-top: 30px;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 50%);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  align-content: center;
+}
+.main-home .img-index .img-uno {
+  grid-row: span 2;
+}
+.main-home .img-index .img-dos {
+  grid-template-rows: 1fr;
+}
+.main-home .img-index .img-tres {
+  grid-template-rows: 1fr;
+}
+.main-home .envios {
+  margin-top: 30px;
 }
 
-.whatsapp{
-    width: 3rem;
-    height: 3rem;
+/*Propiedades de Nosotros*/
+.main-nosotros div {
+  height: 100vh;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  object-fit: cover;
+}
+.main-nosotros div iframe {
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+  grid-row: span 1;
+  align-content: center;
+}
+.main-nosotros div p {
+  padding-top: 15px;
+  text-align: justify;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+  justify-content: center;
+}
+.main-nosotros div p span {
+  display: none;
 }
 
-/* propiedades de mobile */
-
-    /*  Propiedades del menú */
-
-nav div div ul li .menu-buttom{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 500;
-    font-size: medium;
-    text-align: center;
+/* Propiedades de Productos (c-enmarcados, chapas y bastidores)*/
+.main-productos .img-prod {
+  height: 70vh;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 50%);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  align-content: center;
 }
-nav div div ul ul li .buttom-drop{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 500;
-    font-size: medium;
+.main-productos .img-prod .prod-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-
-    /* Propiedades del contenido principal */
-
-h1{
-    text-align: center;
-    padding-top: 40px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: xx-large;
+.main-productos .img-prod .prod-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-h2{
-    text-align: center;
-    padding-top: 10px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: larger;
+.main-productos .img-prod .prod-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-    /* Propiedades del index */
-
-.main-home div{
-    height: 70vh;
-    margin: 30px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2,50%);
-    row-gap: 1rem;
-    column-gap: 1rem;
-    align-content: center;
+.main-productos .img-prod .prod-4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.main-home div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.main-home div .img-uno{
-    grid-row: span 2;
+.main-productos p {
+  margin-top: 30px;
+  text-align: justify;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
-.main-home div .img-dos, main div .img-tres{
-    grid-template-rows: 1fr;
+/* Propiedades de Mayoristas */
+.main-mayoristas div {
+  height: 70vh;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  object-fit: cover;
+}
+.main-mayoristas div .img-may {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  grid-column: span 2;
+  grid-row: span 1;
+  align-content: center;
+}
+.main-mayoristas div p {
+  text-align: justify;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+  justify-content: center;
+}
+.main-mayoristas div p span {
+  font-weight: bold;
 }
 
-.main-home p{
-    padding: 60px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: larger;
-    column-count: 2;
-    text-align: left;
+/* Propiedades de Contacto */
+.main-contacto .div-contacto {
+  height: 70vh;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  object-fit: cover;
 }
-
-    /* Propiedades de nosotros */
-
-.main-nosotros div{
-    height: 100vh;
-    margin: 10px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(2,50%) ;
-    grid-template-rows: repeat(2,50%);
-    object-fit: cover;
+.main-contacto .div-contacto iframe {
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+  grid-row: span 1;
+  align-content: center;
 }
-.main-nosotros iframe{ 
-    width: 100%;
-    height: 100%;
-    grid-column: span 2;
+.main-contacto .div-contacto p {
+  margin-top: 30px;
+  text-align: justify;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+  justify-content: center;
+}
+.main-contacto h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.main-contacto form {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  margin-left: 15px;
+}
+.main-contacto form fieldset {
+  border: none;
+}
+.main-contacto form fieldset div label {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.main-contacto form fieldset div input {
+  width: 300px;
+  margin-bottom: 15px;
+}
+.main-contacto form fieldset div textarea {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-contacto form fieldset .buttons-form {
+  display: flex;
+  justify-content: center;
+}
+.main-contacto form fieldset .buttons-form .submit, .main-contacto form fieldset .buttons-form .submit-1 {
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: small;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  color: black;
+}
+.main-contacto form fieldset .buttons-form .submit:hover, .main-contacto form fieldset .buttons-form .submit-1:hover {
+  filter: drop-shadow(2px 2px 2px rgb(128, 127, 127));
+}
+/* Estilos TABLET */
+@media screen and (min-width: 768px) {
+  /* Propiedades del Index */
+  .envios {
+    margin-bottom: 30px;
+  }
+  /* Propiedades de Nosotros */
+  .main-nosotros span {
+    display: block;
+  }
+  /* Propiedades de Mayoristas */
+  .main-mayoristas div {
+    margin-bottom: 30px;
+  }
+  .main-mayoristas div .img-may {
+    max-width: 100%;
     grid-row: span 1;
-    align-content: center;
-}
-
-.main-nosotros p{
-    margin: 3px;
-    text-align: left;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: larger;
-    width: 100%;
-    height: 100%;  
-    grid-column: span 2;
-    justify-content: center;  
-}
-
-    /* Propiedades de productos (c-enmarcados, chapas y bastidores*/
-
-.img-prod{
-    height: 70vh;
-    margin: 30px;
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(4,25%);
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
-    align-items: center;
-}
-
-.img-prod img{
-    width: 100%;
-    height: 70%;
-}
-
-.prod-1, .prod-2, .prod-3, .prod-4{
-    grid-row: span 2;
-    grid-column: span 2;    
-}
-
-.button-1, .button-2, .button-3, .button-4{
-    margin-top: 10px;
-    padding-left: 5px;
-    width: 80px;
-    height: 30px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 500;
-    font-size: larger;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    grid-row: span 2;
-    grid-column: span 2;
-}
-
-    /* Propiedades de mayoristas */
-
-.main-mayoristas div{
-    height: 70vh;
-    margin: 10px;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(2,50%) ;
-    grid-template-rows: repeat(2,50%);
     object-fit: cover;
+  }
 }
-
-.main-mayoristas div .img-may{
+/* Estilos de DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /*  Propiedades del Menú */
+  nav div div ul {
     width: 100%;
-    height: 100%;
-    grid-column: span 2;
-    grid-row: span 1;
-    align-content: center;
-}
-
-.main-mayoristas div p{
-    
-    margin: 10px;
-    text-align: left;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: larger;
-    width: 100%;
-    height: 100%;  
-    grid-column: span 2;
-    justify-content: center;       
-}
-
-    /* Propiedades de contacto */
-
-.div-contacto{
-    height: 70vh;
-    margin: 10px;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(2,50%) ;
-    grid-template-rows: repeat(2,50%);
-    object-fit: cover;
-}
-
-.div-contacto iframe{
-    width: 100%;
-    height: 100%;
-    grid-column: span 2;
-    grid-row: span 1;
-    align-content: center;
-}
-
-.div-contacto p{
-    margin: 10px;
-    text-align: left;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: larger;
-    width: 100%;
-    height: 100%;  
-    grid-column: span 2;
-    justify-content: center;  
-}
-
-h3{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 600;
-    font-size: x-large;
-    text-align: left;
-    margin-top: 40px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-    /* Propiedades del formulario */
-
-form{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 400;
-    font-size: medium;
-    margin-left: 15px;
-}
-
-fieldset{
-    border: none;
-}
-
-label{
-    display: inline-block;
-    width: 150px;
-    align-items: flex-start;
-} 
-
-#name, #email{
-    width: 300px;
-    margin-bottom: 15px;
-}
-
-#mensaje{
-    display: inline-block;
-    vertical-align: top;
-}
-
-#texto{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.submit{
-    padding-left: 5px;
-    margin-top: 10px;
-    width: 80px;
-    height: 30px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 500;
-    font-size: small;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    
-}
-
-
-/* estilos de desktop*/
-
-@media screen and (min-width:1024px){
-
-    /*  Propiedades del menú */
-
-nav div div ul li .menu-buttom{
+    justify-content: center;
+  }
+  nav div div ul li .menu-buttom {
     list-style: none;
     display: inline-block;
     margin: 10px;
@@ -343,72 +349,97 @@ nav div div ul li .menu-buttom{
     font-size: larger;
     background-color: white;
     border-radius: 20px;
-
-}
-   
-    /* Propiedades de nosotros  */
-
-.main-nosotros iframe{
+  }
+  /* Propiedades del Contenido Principal */
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  /* Propiedades del Index */
+  .envios {
+    margin-top: 60px;
+  }
+  /* Propiedades de Nosotros */
+  .main-nosotros div {
+    padding: 0px;
+    margin-top: 70px;
+  }
+  .main-nosotros div iframe {
     width: 90%;
-    height: 50%; 
-    grid-column: span 1;
-    grid-row: span 2;       
-}
-    
-.main-nosotros p{
-    text-align: justify;
+    height: 60%;
     grid-column: span 1;
     grid-row: span 2;
-}
-
-    /* Propiedades de productos (c-enmarcados, chapas y bastidores)*/
-
-.img-prod img{
-    margin-right: 30px;
-    width: 100%;
-    height: 100%;
-}
- 
-.prod-1, .prod-2, .prod-3, .prod-4{
-    grid-row: span 4;
-    grid-column: span 1;
-}
-
-.button-1, .button-2, .button-3, .button-4{
-    grid-row: span 4;
-    grid-column: span 1;
-}
-    /* Propiedades de mayoristas */
-
-.main-mayoristas div .img-may{
+  }
+  .main-nosotros div p {
+    padding-top: 0px;
+    width: 90%;
+    height: 60%;
     grid-column: span 1;
     grid-row: span 2;
-}
-
-.main-mayoristas div p{        
-    grid-column: span 1;   
-}
-
-    /* Propiedades de contacto */
-
-.div-contacto iframe{    
+  }
+  /* Propiedades de Productos (c-enmarcados, chapas y bastidores)*/
+  .main-productos .img-prod {
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2, auto;
+  }
+  .main-productos .img-prod .prod-1 {
+    height: auto;
+    object-fit: contain;
+  }
+  .main-productos .img-prod .prod-2 {
+    height: auto;
+    object-fit: contain;
+  }
+  .main-productos .img-prod .prod-3 {
+    height: auto;
+    object-fit: contain;
+  }
+  .main-productos .img-prod .prod-4 {
+    height: auto;
+    object-fit: contain;
+  }
+  .main-productos p {
+    font-size: 25px;
+  }
+  /* Propiedades de Mayoristas */
+  .main-mayoristas {
+    margin-bottom: 60px;
+  }
+  .main-mayoristas div .img-may {
     grid-column: span 1;
     grid-row: span 2;
-}
-
-.div-contacto p{
+  }
+  .main-mayoristas div p {
+    width: 90%;
+    height: 60%;
+    font-size: 25px;
     grid-column: span 1;
+    grid-row: span 2;
+  }
+  /* Propiedades de Contacto */
+  .main-contacto .div-contacto iframe {
+    width: 90%;
+    height: 60%;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .main-contacto .div-contacto p {
+    margin-top: 0px;
+    width: 90%;
+    height: 60%;
+    font-size: x-large;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .main-contacto form {
+    margin-top: 5px;
+  }
+  .main-contacto form fieldset .buttons-form {
+    width: 650px;
+  }
 }
 
-    /* Propiedades del formulario */
-
-.submit{
-    padding-left: 5px;
-    margin-top: 15px;
-    width: 110px;
-    height: 40px;
-    font-size: large;
-}
-}
-    
-   
+/*# sourceMappingURL=main.css.map */

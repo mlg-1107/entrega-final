@@ -1,0 +1,38 @@
+
+// Import Archivos Secundarios
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Propiedades de Productos (c-enmarcados, chapas y bastidores)*/
+
+.main-productos{
+    .img-prod{
+        height: 70vh;
+        margin-top: 30px;
+        @include grid-home-prod;
+        align-content: center;
+        .prod-1{
+            @include foto-prod;
+        }
+        .prod-2{
+            @include foto-prod;
+        }
+        .prod-3{
+            @include foto-prod;
+        }
+        .prod-4{
+            @include foto-prod;
+        }
+    }
+    p{
+        margin-top: 30px;
+        text-align: justify;
+        font-family: $font;
+        font-weight: $font-w-small;
+        font-size: $font-s-larger;
+        width: 100%;
+        height: 100%;  
+        justify-content: center;
+    }
+}

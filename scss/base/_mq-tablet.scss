@@ -1,0 +1,36 @@
+// Import Archivos Secundarios
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+    /* Estilos TABLET */
+
+@media screen and (min-width:768px){
+
+        /* Propiedades del Index */
+
+
+    .envios{
+        margin-bottom: 30px;
+    }
+
+   /* Propiedades de Nosotros */
+
+    .main-nosotros{
+        span{
+            display: block;
+        }
+    } 
+   /* Propiedades de Mayoristas */
+
+    .main-mayoristas{
+        div{
+        margin-bottom: 30px;
+        .img-may{
+            max-width: 100%;
+            grid-row: span 1;
+            object-fit: cover;
+        }
+        }
+    } 
+}

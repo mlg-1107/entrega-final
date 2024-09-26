@@ -1,0 +1,110 @@
+
+// Import Archivos Secundarios
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Propiedades del Header*/
+
+header{
+    width: 100%;
+    background-color: $back-body;
+    @include flex;
+    align-items: $align-i-center;
+    position: sticky;
+    top: 0;
+}
+
+/* Propiedades del Footer*/
+
+footer{
+    .derechos{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        font-family: $font;
+        font-weight: $font-s-small;
+        font-size: $font-s-small;
+    }
+    .footer-completo{
+        @include flex;
+        align-items: $align-i-flexstart;
+    }
+    
+    .contactanos{
+        font-weight: $font-w-black;
+        font-size: $font-s-medium;
+        color: $color-tipografia;
+    }
+    
+    .redes{
+        font-weight: $font-w-black;   
+        font-size: $font-s-medium;    
+    }
+    .instagram{
+        width: 7vh;
+        height: 7vh;
+    }
+    .item-fixed{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        filter: drop-shadow(10px 10px 10px black);
+    }
+    
+    .whatsapp{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* Propiedades del Menú*/
+
+nav{
+    div{
+        img{
+            display: grid;
+            grid-template-rows: 1fr;
+            padding-top: 30px;
+            width: 10%;
+            height: 10%;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+    }
+        div{
+            ul{
+                li{
+                    font-family: $font;
+                    font-weight: $font-w-medium;
+                    font-size: $font-s-medium;
+                    .menu-buttom{                        
+                        text-align: center;
+                        &:hover{
+                            filter: drop-shadow(2px 2px 2px $color-shadow);
+                        }
+                    }
+                }
+            }
+        }
+}
+
+/* Proppiedades del Contenido Principal */
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+
