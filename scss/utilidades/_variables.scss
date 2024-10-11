@@ -7,6 +7,7 @@ $color-tipografia: black;
 $color-submit: white;
 $color-shadow: rgb(128, 127, 127);
 
+
 //fuentes
 
 $font: "Barlow Semi Condensed", sans-serif;
@@ -23,8 +24,12 @@ $font-s-larger: larger;
 $font-s-xl: x-large;
 $font-s-xxl: xx-large;
 
-//alineación ded items
+//alineación
 
-$align-i-center: center;
-$align-i-flexstart:flex-start;
+$align-center: center;
+$align-flexstart: flex-start;
+$align-justify: justify;
 
+//medidas
+
+$ancho: 100%;

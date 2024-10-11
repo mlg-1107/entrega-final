@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Mayoristas" content="Revendé nuestros productos! No te pierdas essta oportunidad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Mayoristas" content="Impulsa tu negocio con AHI TENES LA PUERTA. Revende nuestros productos. Contáctanos para crear packs personalizados que se adapten a tus necesidades. ¡Hace crecer tu negocio con nosotros!">
     
      <!-- Link de tipografía -->
 
@@ -22,48 +23,46 @@
 </head>
 <body>
 
-   
-    <header>
+  <header>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-prop">
+      <div class="container-fluid container-menu">
 
-     <!-- Barra de navegación -->
-         
-     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+    <!-- Imagen del logo -->
 
-        <!-- imagen del logo -->
-         
-        <img src="../img/el-logo br-min.png" alt="logo con fondo verde y las letras A T L P en negro">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active menu-buttom" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active menu-buttom" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle menu-buttom" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item buttom-drop" href="chapas.html">Chapas</a></li>
-                <li><a class="dropdown-item buttom-drop" href="bastidores.html">Bastidores</a></li>
-                <li><a class="dropdown-item buttom-drop" href="c-enmarcados.html">Cuadros Enmarcados</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active menu-buttom" aria-current="page" href="mayoristas.html">Mayoristas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active menu-buttom" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
+      <a class="navbar-brand brand-nav" href="../index.html">
+      <img src="../img/el-logo-br-min.png" alt="Logo circular en color verde con las letras A T L P en color negro" class="logo">
+      </a>
+    <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end offcanvas-prop" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <ul class="navbar-nav lista-nav">
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown prod-drop">
+          <a class="nav-link active dropdown-toggle menu-buttom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+          <ul class="dropdown-menu menu-drop">
+            <li><a class="dropdown-item buttom-drop" href="chapas.html">Chapas</a></li>
+            <li><a class="dropdown-item buttom-drop" href="bastidores.html">Bastidores</a></li>
+            <li><a class="dropdown-item buttom-drop" href="c-enmarcados.html">Cuadros Enmarcados</a></li>
           </ul>
-          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" href="mayoristas.html">Mayoristas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
       </div>
     </nav>
-    </header>
+  </header>
 
     <!-- Contenido principal -->
 
@@ -71,7 +70,7 @@
         <h1> AHI TENES LA PUERTA </h1>
         <h2> Decoramos tu lugar en el mundo</h2>
         
-        <div>
+        <div class="container-may">
            <p> <span> HACÉ CRECER TU NEGOCIO!! </span>
             <br>
             Si querés revender nuestros productos, no dudes en contactarte con nosotros.
@@ -79,11 +78,20 @@
             Podemos armar packs personalizados que se adaptan a las necesidades específicas de tu negocio.
             <br>
             Podés combinar productos y medidas según tu estilo y las tendencias vigentes.
-           </p>        
+            </p>
+          
+          <div class="mayoristas">
+            <div class="img-may">
+              <img src="../img/chap.JPG" alt="imagen de muchas chapas de diferentes estilos">
 
-           <img class="img-may" src="../img/chap br.JPG" alt="imagen de muchas chapas de diferentes estilos">
+              <img src="../img/todos.JPG" alt="imagen de varios productos de peliculas de los 80 como Volver al Futuro, Tiburón, Rocky" >
+            </div>
+            
+
+            <iframe src="https://youtube.com/embed/5XAhHNywd5Q?si=_8vJ_AS2-7horls3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe> 
+          </div>       
         </div>
-        
     </main>   
 
     <!-- Pie de pagina  -->
@@ -92,12 +100,14 @@
       <p class="derechos"> Todos los derechos reservados </p>
             <div class="footer-completo">
         
-                <div class="datos">
-                  <p class="contactanos"> CONTACTANOS </p>
-                  <p> Dirección: Las Acacias 1344, C.A.B.A. </p>
-                  <p> Whatasapp: 11 3408-2901 </p>
-                  <p> Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com </a></p>
-                </div>
+              <div class="datos">
+                <p class="contactanos"> CONTACTANOS </p>
+                <p> Dirección: Las Acacias 1344, C.A.B.A.
+                 <br>
+                Whatasapp: 11 3408-2901
+                <br>
+                Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com </a></p>
+             </div>
 
                 <div class="redes-sociales">
                   <p class="redes"> REDES SOCIALES </p>

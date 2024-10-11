@@ -8,31 +8,40 @@
 
 .main-productos{
     .img-prod{
-        height: 70vh;
         margin-top: 30px;
-        @include grid-home-prod;
-        align-content: center;
-        .prod-1{
-            @include foto-prod;
-        }
-        .prod-2{
-            @include foto-prod;
-        }
-        .prod-3{
-            @include foto-prod;
-        }
-        .prod-4{
-            @include foto-prod;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+        .prod-item{
+            @include flex-column;
+            align-items: $align-center;
+            text-align: $align-center;
+            margin-bottom: 10px;
+            img{
+                @include prop-100-auto;
+                border-radius: 5px;
+                }
+                .buy-button{
+                    padding: 5px;
+                    margin-top: 10px;
+                    font-weight: $font-w-black;
+                    font-size: $font-s-medium;
+                    background-color: $color-submit;
+                    border: none;
+                    border-radius: 15px;
+                    color: $color-tipografia;
+                    &:hover{
+                        box-shadow: 5px 5px 5px $color-shadow;
+                    }
+                }
         }
     }
     p{
+        @include prop-100;
+        @include tipo-mobile;
         margin-top: 30px;
-        text-align: justify;
-        font-family: $font;
-        font-weight: $font-w-small;
-        font-size: $font-s-larger;
-        width: 100%;
-        height: 100%;  
-        justify-content: center;
+        text-align: $align-justify;
+        justify-content: $align-center;
     }
 }

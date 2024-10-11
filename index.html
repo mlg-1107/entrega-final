@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Decoración de interiores" content="Cuadros, chapas, bastidores, murales. Productos personalizados para hacer de tu casa un hogar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre AHI TENES LA PUERTA, donde decoramos tus espacios con estilo. Transforma tu hogar con nosotros. Contáctanos para más información.">
 
     <!-- Link de tipografía -->
 
@@ -18,51 +19,50 @@
 
      <link rel="stylesheet" href="css/main.css">
 
-    <title> Home - ATLP</title>
+    <title> Home - ATLP </title>
 </head>
 <body>
 
-     <header>     
+  <header>
+      <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-prop">
+      <div class="container-fluid container-menu">
 
-        <!-- Barra de navegación -->
-         
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+      <!-- Imagen del logo -->
 
-              <!-- imagen del logo -->
-
-              <img src="img/el-logo br-min.png" alt="logo con fondo verde y las letras A T L P en negro">
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active menu-buttom" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active menu-buttom" href="pages/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle menu-buttom" href="pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item buttom-drop" href="pages/chapas.html">Chapas</a></li>
-                      <li><a class="dropdown-item buttom-drop" href="pages/bastidores.html">Bastidores</a></li>
-                      <li><a class="dropdown-item buttom-drop" href="pages/c-enmarcados.html">Cuadros Enmarcados</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active menu-buttom" aria-current="page" href="pages/mayoristas.html">Mayoristas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active menu-buttom" aria-current="page" href="pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                </div>
-            </div>
-          </nav>
-    </header>
+      <a class="navbar-brand brand-nav" href="index.html">
+        <img src="img/el-logo-br-min.png" alt="Logo circular en color verde con las letras A T L P en color negro" class="logo">
+      </a>
+      <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end offcanvas-prop" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <ul class="navbar-nav lista-nav">
+          <li class="nav-item">
+            <a class="nav-link active menu-buttom" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active menu-buttom" href="pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown prod-drop">
+            <a class="nav-link active dropdown-toggle menu-buttom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+            <ul class="dropdown-menu menu-drop">
+              <li><a class="dropdown-item buttom-drop" href="pages/chapas.html">Chapas</a></li>
+              <li><a class="dropdown-item buttom-drop" href="pages/bastidores.html">Bastidores</a></li>
+              <li><a class="dropdown-item buttom-drop" href="pages/c-enmarcados.html">Cuadros Enmarcados</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active menu-buttom" href="pages/mayoristas.html">Mayoristas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active menu-buttom" href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
 
     <!-- contenido principal -->
 
@@ -71,9 +71,9 @@
         <h2> Decoramos tu lugar en el mundo</h2>
 
         <div class="img-index">
-             <img class="img-uno" src="img/living br.jpg" alt="foto de living con un sillón y un cuadro de fondo con plantas y un mueble">
-             <img class="img-dos" src="img/chap br.JPG" alt="chapas de distintas temáticas">
-             <img class="img-tres" src="img/bast-nord-1 br.JPG" alt="bastidores con dibujos nórdicos">
+             <img class="img-uno" src="img/living.jpg" alt="foto de living con un sillón y un cuadro de fondo con plantas y un mueble">
+             <img class="img-dos" src="img/chap.JPG" alt="chapas de distintas temáticas">
+             <img class="img-tres" src="img/bast-nord-1.JPG" alt="bastidores con dibujos nórdicos">
           </div>    
 
           <div class="envios">
@@ -90,9 +90,11 @@
         
               <div class="datos">
                  <p class="contactanos"> CONTACTANOS </p>
-                 <p> Dirección: Las Acacias 1344, C.A.B.A. </p>
-                 <p> Whatasapp: 11 3408-2901 </p>
-                 <p> Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com </a></p>
+                 <p> Dirección: Las Acacias 1344, C.A.B.A.
+                  <br>
+                 Whatasapp: 11 3408-2901
+                 <br>
+                 Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com </a></p>
               </div>
 
               <div class="redes-sociales">

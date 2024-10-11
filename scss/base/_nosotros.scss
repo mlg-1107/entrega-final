@@ -6,30 +6,32 @@
 /*Propiedades de Nosotros*/
 
 .main-nosotros{
-    div{
-        height: 100vh;
-        padding: 5px;
-        @include grid-nos-may-cont;
-        iframe{
-            width: 100%;
-            height: 100%;
-            grid-column: span 2;
-            grid-row: span 1;
-            align-content: center;
+    .container-nosotros{
+        @include flex-column;
+        align-items: $align-center;
+        padding: 20px;
+        .container-video{
+            width: $ancho;
+            max-width: 800px;
+            margin-bottom: 20px;
+            iframe{
+                @include prop-100-auto;
+                aspect-ratio: 16 / 9;
+            }          
         }
         p{
+            @include tipo-mobile;
             padding-top: 15px;
-            text-align: justify;
-            font-family: $font;
-            font-weight: $font-w-small;
-            font-size: $font-s-larger;
-            width: 100%;
-            height: 100%;  
-            grid-column: span 2;
-            justify-content: center;
+            text-align: $align-justify;
+            width: $ancho;  
+            max-width: 800px;
+            line-height: 1.5;
             span{
                 display: none;
             }
+        }
+        .galeria{
+            display: none;
         }
     }
 }

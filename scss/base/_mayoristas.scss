@@ -6,31 +6,33 @@
 
     /* Propiedades de Mayoristas */
 
-    .main-mayoristas{
-        div{
-            height: 70vh;
-            padding: 30px;
-            @include grid-nos-may-cont;
-            .img-may{
-                width: 100%;
-                height: 100%;
-                padding-top: 20px;
-                grid-column: span 2;
-                grid-row: span 1;
-                align-content: center;
-            }
+.main-mayoristas{
+    margin-bottom: 20px;
+        .container-may{
+            margin-top: 30px;
+            @include flex-column;
             p{
-                text-align: justify;
-                font-family: $font;
-                font-weight: $font-w-small;
-                font-size: $font-s-larger;
-                width: 100%;
-                height: 100%;  
-                grid-column: span 2;
-                justify-content: center;
+                @include prop-100;
+                @include tipo-mobile;
+                text-align: $align-justify;
                 span{
                     font-weight: $font-w-black;
                 }
             }
+            .mayoristas{
+                @include grid-home;
+                grid-template-rows: auto;
+                gap: 10px;
+                .img-may{
+                    @include flex-column;
+                    gap: 10px;
+                    img{
+                        @include prop-100-auto;
+                    }
+                }
+                iframe{
+                    @include prop-100;
+                }                
+            }
         }
-    }
+}

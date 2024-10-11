@@ -3,144 +3,210 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
 
-    /* Estilos de DESKTOP*/
+/* Estilos de DESKTOP*/
 
 @media screen and (min-width:1024px){
-     /*  Propiedades del Menú */
 
-    nav{
-        div{
-            div{
-                ul{
-                    width: 100%;
-                    justify-content: center;
-                    li{
-                        .menu-buttom{
-                            list-style: none;
-                            display: inline-block;
-                            margin: 10px;
-                            padding: 10px;
-                            font-family: $font;
-                            font-weight: $font-w-medium;
-                            font-size: $font-s-larger;
-                            background-color: $color-submit;
-                            border-radius: 20px;
-                        }
-                    }
-                } 
-            } 
-        } 
-    }
-    /* Propiedades del Contenido Principal */
-    h1{
-        font-size: 40px;
-    }
+/* Propiedades del Footer*/
 
-    h2{
-        font-size: 25px;
-    }
-    /* Propiedades del Index */
-
-    .envios{
-        margin-top: 60px;
-    }
-
-    /* Propiedades de Nosotros */
-
-    .main-nosotros{
-        div{
-            padding: 0px;
-            margin-top: 70px;
-            iframe{
-                width: 90%;
-                height: 60%; 
-                grid-column: span 1;
-                grid-row: span 2; 
-            }
-            p{
-                padding-top: 0px;
-                width: 90%;
-                height: 60%; 
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-        }
-    } 
-
-    /* Propiedades de Productos (c-enmarcados, chapas y bastidores)*/
-
-    .main-productos{
-        .img-prod{
-            height: auto;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 2, auto;
-            .prod-1{
-                @include foto-prod-desk;
-            }
-            .prod-2{
-                @include foto-prod-desk;
-            }
-            .prod-3{
-                @include foto-prod-desk;
-            }
-            .prod-4{
-                @include foto-prod-desk;
-            }
-        }
-        p{
-            font-size: 25px;
-        }
-    }
-    
-    /* Propiedades de Mayoristas */
-
-    .main-mayoristas{
-        margin-bottom: 60px;
-    }
-    
-    .main-mayoristas{
-        div{
-            .img-may{
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-            p{        
-                width: 90%;
-                height: 60%; 
-                font-size: 25px;
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-        }
-    }
-
-    /* Propiedades de Contacto */
-    .main-contacto{
-        .div-contacto{
-            iframe{
-                width: 90%;
-                height: 60%; 
-                grid-column: span 1;
-                grid-row: span 2; 
-            }
-            p{
-                margin-top: 0px;
-                width: 90%;
-                height: 60%; 
+footer{
+    .footer-completo{
+        .datos{
+            font-size: $font-s-larger;
+            .contactanos{
+                font-weight: $font-w-black;
                 font-size: $font-s-xl;
-                grid-column: span 1;
-                grid-row: span 2;
             }
         }
-        form{
-            margin-top: 5px;
-            fieldset{
-                .buttons-form{
-                    width: 650px;
+        .redes-sociales{
+            .redes{
+                font-weight: $font-w-black;
+                font-size: $font-s-xl;
+            }
+            .instagram{
+                width: 60px;
+            }
+        }
+    }
+    .item-fixed{
+        .whatsapp{
+            width: 60px;
+        }
+    }
+}
+
+/* Propiedades del Contenido Principal*/
+
+main{
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+
+/* Propiedades del Menú */
+
+@keyframes salto{
+    0%, 20%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(-5px);
+    }
+}
+
+.navbar-prop{
+    .container-menu{
+        padding: 0 30px;
+        .logo{
+            max-width: 125px;
+            border-radius: 50%;
+            transition: transform 0.2s;
+            &:hover{
+                animation: salto 0.5s;
+                box-shadow: 0 4px 15px $color-shadow;
+            }
+        }
+        .lista-nav{
+            margin-left: auto;
+        }
+        .navbar-button{
+            display: none;
+        }
+        .offcanvas-prop{
+            justify-content: right;
+            .menu-buttom{
+                padding-left: 5px;
+                margin-right: 10px;
+                font-weight: $font-w-medium;
+                font-size: $font-s-larger;
+                background-color: $color-submit;
+                border-radius: 15px;
+                color: $color-tipografia;
+                &:hover{
+                    text-shadow: none;
+                    box-shadow: 5px 5px 5px $color-shadow;
+                }
+            }
+            .menu-drop{
+                .buttom-drop{
+                    font-size: $font-s-larger;
                 }
             }
         }
     }
-    
 }
 
+/* Propiedades del Contenido Principal */
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: $font-s-xs;
+}
+
+/* Propiedades del Index */
+.envios{
+    margin-top: 60px;
+}
+
+/* Propiedades de Nosotros */
+
+.main-nosotros{
+    .container-nosotros{
+        .container-video{
+            width: 80%;
+        }
+        p{
+            width: 80%;
+        }
+        .galeria{
+            .fotos{
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
+        }
+    }
+} 
+
+/* Propiedades de Productos (c-enmarcados, chapas y bastidores)*/
+
+.main-productos{
+    .img-prod{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    p{
+        font-size: 25px;
+    }       
+}
+
+/* Propiedades de Mayoristas */
+
+.main-mayoristas{
+    h2{
+        margin-bottom: 60px;
+    }
+    .container-may{
+        margin: auto;
+        max-width: 1200px;
+        overflow: hidden;
+        .mayoristas{
+                grid-template-rows: repeat(2, auto);
+                margin-top: 20px;
+                justify-items: center;
+                align-items: stretch;
+                column-gap: 20px;
+                .img-may{
+                    @include flex-column;
+                    height: 100%;
+                    max-height: 100%;
+                    img{
+                        @include prop-100-auto;
+                        margin-bottom: 20px;
+                    }
+                }
+                iframe{
+                    grid-row: span 2;
+                    width: 100%;
+                    height: 87%;
+                    aspect-ratio: 9 / 16;
+                }
+        }
+    }
+}
+
+
+
+/* Propiedades de Contacto */
+.main-contacto{
+    .div-contacto{
+        display: flex;
+        justify-content: $align-center;
+        align-items: $align-flexstart;
+        flex-wrap: wrap;
+        .map{
+            iframe{
+                display: block;
+                width: 500px;
+                margin-right: 20px;
+            }
+        }
+        p{
+            width: 500px;
+            font-size: $font-s-xl;
+        }
+    }
+    form{
+        max-width: 600px;
+        margin-top: 5px;
+        fieldset{
+            .buttons-form{
+                width: 650px;
+            }
+        }
+    }
+}
+}

@@ -3,34 +3,214 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
 
-    /* Estilos TABLET */
+/* Estilos TABLET */
+
+@media (min-width:768px) and (max-width:1024px){
+
+/* Propiedades del Menú */
+
+.navbar-prop{
+    .container-menu{
+        .logo{
+            max-width: 90px;         
+        }
+        .offcanvas-prop{
+            .menu-buttom{
+                font-size: $font-s-xl;
+                }
+                .menu-drop{
+                    .buttom-drop{
+                        font-size: $font-s-larger;
+                    }
+                }
+        }
+    }
+}
+}
+
 
 @media screen and (min-width:768px){
 
-        /* Propiedades del Index */
+/* Propiedades del Footer*/
 
-
-    .envios{
-        margin-bottom: 30px;
+footer{
+    .derechos{
+        font-weight: $font-w-medium;
+        font-size: $font-s-larger;
     }
+    .footer-completo{
+        .datos{
+            font-weight: $font-w-medium;
+            font-size: $font-s-xl;
+            .contactanos{
+                font-weight: $font-w-black;
+                font-size: $font-s-xl;
+            }
+        }
+        .redes-sociales{
+            .redes{
+                font-weight: $font-w-black;
+                font-size: $font-s-xl;
+            }
+        }
+    }        
+}
 
-   /* Propiedades de Nosotros */
+/* Propiedades del Contenido Principal*/
 
-    .main-nosotros{
-        span{
+main{
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+
+
+/* Propiedades del Index */
+
+.envios{
+    margin-bottom: 30px;
+}
+
+/* Propiedades de Nosotros */
+
+.main-nosotros{
+    .container-nosotros{
+        p{
+            @include tipo-tablet;
+            span{
+                display:inline;
+            }
+        }
+        .galeria{
             display: block;
+            text-align: center;
+            h3{
+                background-color: $color-tipografia;
+                color: $color-submit;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 20px;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                display: inline-block;
+            }
+            .fotos{
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+                a{
+                    img{
+                        @include prop-100-auto;
+                        border-radius: 8px;
+                        transition: transform 0.3s;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+            .lightbox{
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                justify-content: center;
+                align-items: center;
+                a.overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+                img{
+                    max-width: 70%;
+                    max-height: 70%;
+                    border-radius: 8px;
+                    box-shadow: 0 0 15px whitesmoke;
+                }
+                &.active{
+                    display: flex;
+                }
+                }
+                .lightbox:target {
+                    display: flex;
+                }
         }
-    } 
-   /* Propiedades de Mayoristas */
+    }
+}
 
-    .main-mayoristas{
-        div{
-        margin-bottom: 30px;
-        .img-may{
-            max-width: 100%;
-            grid-row: span 1;
-            object-fit: cover;
+/* Propiedades de Productos (c-enmarcados, chapas y bastidores)*/
+
+.main-productos{
+    .img-prod{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    p{
+        @include tipo-tablet;
+    }
+}
+
+/* Propiedades de Mayoristas */
+
+.main-mayoristas{
+    .container-may{
+        margin-top: 50px;
+        p{
+            @include tipo-tablet;
+            margin-bottom: 30px;
         }
+    }
+}
+
+/* Propiedades de Contacto */
+
+.main-contacto{
+    .div-contacto{
+        .map{
+            display: block;
+            margin-top: 30px;
+            iframe{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }            
         }
-    } 
+        p{
+            display: block;
+            @include prop-100;
+            @include tipo-tablet;
+            margin-top: 30px;
+            text-align: $align-justify;
+        }
+    }
+    h3{
+        font-weight: $font-w-black;
+        font-size: $font-s-xxl;
+    }
+    form{
+        margin: 20px auto;
+        fieldset{
+            label{
+                @include tipo-tablet;
+            }
+            .buttons-form{
+                .submit, .submit-1{
+                    @include tipo-tablet;
+                    width: 125px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
 }

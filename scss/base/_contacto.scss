@@ -4,91 +4,72 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
 
-    /* Propiedades de Contacto */
+/* Propiedades de Contacto */
 
-    .main-contacto{
-        .div-contacto{
-            height: 70vh;
-            margin-top: 30px;
-            @include grid-nos-may-cont;
-            iframe{
-                width: 100%;
-                height: 100%;
-                grid-column: span 2;
-                grid-row: span 1;
-                align-content: center;
+.main-contacto{
+    @include prop-100;
+    .div-contacto{
+            .map{
+                display: none;
             }
             p{
-                margin-top: 30px;
-                text-align: justify;
-                font-family: $font;
-                font-weight: $font-w-small;
-                font-size: $font-s-larger;
-                width: 100%;
-                height: 100%;  
-                grid-column: span 2;
-                justify-content: center;  
+               display: none;   
+            }
+    }
+    h3{
+        font-weight: $font-w-large;
+        font-size: $font-s-xl;
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    /*Propiedades del Formulario*/
+
+    form{
+        @include tipo-mobile;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        fieldset{
+            div{
+                label{
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                input{
+                    width: $ancho;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                }
+                textarea{
+                    width: $ancho;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                }
+            }
+            .buttons-form{
+                display: flex; 
+                justify-content: $align-flexstart;
+                margin-top: 10px;
+                .submit, .submit-1{
+                    margin: 0 5px;
+                    width: 85px;
+                    height: 30px;
+                    font-weight: $font-w-small;
+                    font-size: $font-s-medium;
+                    background-color: $color-submit;
+                    border: none;
+                    border-radius: 20px;
+                    color: $color-tipografia;
+                    &:hover {
+                        filter: drop-shadow(2px 2px 2px $color-shadow);
+                    }
+                }
             }
         }
-        h3{
-            font-family: $font;
-            font-weight: $font-w-large;
-            font-size: $font-s-xl;
-            text-align: left;
-            margin-top: 40px;
-            margin-left: 15px;
-            margin-bottom: 20px;
-        }
-        form{
-            font-family: $font;
-            font-weight: $font-w-small;
-            font-size: $font-s-medium;
-            margin-left: 15px;
-            fieldset{
-                border: none;
-                div{
-                    label{
-                        display: inline-block;
-                        width: 150px;
-                        margin-bottom: 20px;
-                        align-items: flex-start;
-                    }
-                    input{
-                        width: 300px;
-                        margin-bottom: 15px;
-                    }
-                }
-                div{
-                    textarea{
-                        display: inline-block;
-                        vertical-align: top;
-                    }
-                }
-                .buttons-form{
-                        display: flex;
-                        justify-content: center;
-                        .submit{
-                            padding-left: 5px;
-                            margin-top: 10px;
-                            margin-right: 10px;
-                            width: 80px;
-                            height: 30px;
-                            font-family: $font;
-                            font-weight: $font-w-medium;
-                            font-size: $font-s-small;
-                            background-color: $color-submit;
-                            border: none;
-                            border-radius: 20px;
-                            color: $color-tipografia;
-                            &:hover{
-                                filter: drop-shadow(2px 2px 2px $color-shadow);
-                            }
-                        }
-                        .submit-1{
-                            @extend .submit;
-                        }
-                }
-                
     }
-    }
-    }
+}

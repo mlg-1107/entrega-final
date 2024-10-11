@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Nosotros" content="Traé tu idea, nosotros hacemos el resto!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Nosotros" content="Somos una empresa joven dedicada a decorar con productos personalizados. Desde chapas hasta cuadros, transformamos tus recuerdos. ¡Contáctanos y descubre cómo podemos ayudarte!">
     
      <!-- Link de tipografía -->
 
@@ -22,48 +23,47 @@
 </head>
 <body>
 
-       
-    <header>
+  <header>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-prop">
+      <div class="container-fluid container-menu">
 
-       <!-- Barra de navegación -->
-         
-       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <!-- Imagen del logo -->
 
-          <!-- imagen del logo -->
-           
-          <img src="../img/el-logo br-min.png" alt="logo con fondo verde y las letras A T L P en negro">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active menu-buttom" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active menu-buttom" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle menu-buttom" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item buttom-drop" href="chapas.html">Chapas</a></li>
-                  <li><a class="dropdown-item buttom-drop" href="bastidores.html">Bastidores</a></li>
-                  <li><a class="dropdown-item buttom-drop" href="c-enmarcados.html">Cuadros Enmarcados</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active menu-buttom" aria-current="page" href="mayoristas.html">Mayoristas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active menu-buttom" aria-current="page" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-            </div>
-        </div>
-      </nav>
-    </header>
+      <a class="navbar-brand brand-nav" href="../index.html">
+      <img src="../img/el-logo-br-min.png" alt="Logo circular en color verde con las letras A T L P en color negro" class="logo">
+      </a>
+    <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end offcanvas-prop" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <ul class="navbar-nav lista-nav">
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown prod-drop">
+          <a class="nav-link active dropdown-toggle menu-buttom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+          <ul class="dropdown-menu menu-drop">
+            <li><a class="dropdown-item buttom-drop" href="chapas.html">Chapas</a></li>
+            <li><a class="dropdown-item buttom-drop" href="bastidores.html">Bastidores</a></li>
+            <li><a class="dropdown-item buttom-drop" href="c-enmarcados.html">Cuadros Enmarcados</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" href="mayoristas.html">Mayoristas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active menu-buttom" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+      </div>
+    </nav>
+  </header>
+
 
     <!-- Contenido principal -->
 
@@ -71,13 +71,98 @@
         <h1> AHI TENES LA PUERTA </h1>
         <h2> Decoramos tu lugar en el mundo</h2>
 
-        <div>
+        <div class="container-nosotros">
+          <div class="container-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2JhBqG9q2_c?si=tJTe9aXNfQdSbmYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       
-            <p> Somos una empresa joven, que  tiene como objetivo hacer que tu lugar, sea el mejor del mundo. Trabajamos bastidores, chapas e imágenes enmarcadas. Podés tener tu producto con la temática que quieras! Comics, deportes, música, gaming, cine... Si no tenemos lo que buscás, lo encontramos o lo hacemos.
-            <span> También podemos armar productos personalizados con las fotos o imágenes que nos envíes. La foto de tu perro? La hacemos! Esa foto de ese momento hermoso? La hacemos! Un pequeño regalo empresarial?? Lo hacemos! Un regalito para tu sobri fanático de algo?? Lo hacemos! </span>
-            No dudes en consultarnos. Podemos ayudarte a elegir y orientarte sobre el tipo de producto que conviene para la imagen que elijas.</p>
-        </div> 
+          </div>
+
+          <p> Somos una empresa joven, que  tiene como objetivo hacer que tu lugar, sea el mejor del mundo. Trabajamos bastidores, chapas e imágenes enmarcadas. Podés tener tu producto con la temática que quieras! Comics, deportes, música, gaming, cine... Si no tenemos lo que buscás, lo encontramos o lo hacemos.
+          <br>
+          <span> También podemos armar productos personalizados con las fotos o imágenes que nos envíes. La foto de tu perro? La hacemos! Esa foto de ese momento hermoso? La hacemos! Un pequeño regalo empresarial?? Lo hacemos! Un regalito para tu sobri fanático de algo?? Lo hacemos! </span>
+          <br>
+          No dudes en consultarnos. Podemos ayudarte a elegir y orientarte sobre el tipo de producto que conviene para la imagen que elijas.
+          </p>
+          
+          <div class="galeria">
+            <h3>LOS FAVORITOS DE NUESTROS CLIENTES 👇 </h3>
+            <div class="fotos">
+
+              <a href="#img1">
+                <img src="../img/gal-1.JPG" alt="Reproducción en 3D de estatua de Rocky Balboa">
+              </a>
+              <a href="#img2">
+                <img src="../img/gal-2.JPG" alt="Carteles de chapa para señalizar bares">
+              </a>
+              <a href="#img3">
+                <img src="../img/gal-3.JPG" alt="Cuadros con marco negro de basquet">
+              </a>
+              <a href="#img4">
+                <img src="../img/gal-4.JPG" alt="Reproducción 3D de muñeco Funko de Messi">
+              </a>
+              <a href="#img5">
+                <img src="../img/gal-5.JPG" alt="Chapas patente personalizadas">
+              </a>
+              <a href="#img6">
+                <img src="../img/gal-6.jpg" alt="Cuadro con marco negro y collage de fotos">
+              </a>
+              <a href="#img7">
+                <img src="../img/gal-7.JPG" alt="Bastidores con diseños de barbería">
+              </a>
+              <a href="#img8">
+                <img src="../img/gal-8.JPG" alt="Reproducción 3D de muñeco de Gustavo Cerati"
+                ></a>
+              <a href="#img9">
+                <img src="../img/gal-9.JPG" alt="Chapa patente Toretto">
+              </a>
+            </div>
+            
+            <div class="lightbox" id="img1">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-1.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img2">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-2.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img3">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-3.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img4">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-4.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img5">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-5.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img6">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-6.jpg" alt="">
+            </div>
+
+            <div class="lightbox" id="img7">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-7.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img8">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-8.JPG" alt="">
+            </div>
+
+            <div class="lightbox" id="img9">
+              <a href="#!" class="overlay"></a>
+              <img src="../img/gal-9.JPG" alt="">
+          </div>
+          </div>
+        </div>         
+
     </main>
 
     <!-- Pie de pagina  -->
@@ -86,12 +171,14 @@
       <p class="derechos"> Todos los derechos reservados </p>
             <div class="footer-completo">
         
-                <div class="datos">
-                  <p class="contactanos"> CONTACTANOS </p>
-                  <p> Dirección: Las Acacias 1344, C.A.B.A. </p>
-                  <p> Whatasapp: 11 3408-2901 </p>
-                  <p> Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com </a></p>
-                </div>
+              <div class="datos">
+                <p class="contactanos"> CONTACTANOS </p>
+                <p> Dirección: Las Acacias 1344, C.A.B.A.
+                 <br>
+                Whatasapp: 11 3408-2901
+                <br>
+                Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com </a></p>
+             </div>
 
                 <div class="redes-sociales">
                   <p class="redes"> REDES SOCIALES </p>
