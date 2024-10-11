@@ -1,2 +1,2 @@
 Enlace de Netlify:
-entrega-final-goyeneche.netlify.app
+https://entrega-final-goyeneche.netlify.app/
